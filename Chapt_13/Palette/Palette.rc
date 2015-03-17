@@ -1,0 +1,225 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open Bitmap",                IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Tests",                       IDM_FILE_TEST
+        MENUITEM "Demo\tSystem Palette Window", IDM_FILE_PALETTEWND
+        MENUITEM "Demo\tHalftone halette & Palette Message Handling", 
+                                                IDM_FILE_PALMESSAGE
+        MENUITEM "Demo\tDIB Palette/STRETCH_HALFTONE", IDM_FILE_DIBPAL
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+END
+
+IDR_DIBVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open",                       IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Test",                        IDM_FILE_TEST
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Mask Green\tSRCAND",          IDM_VIEW_MASKGREEN
+        MENUITEM "Mask Blue\tSRCAND",           IDM_VIEW_MASKBLUE
+        MENUITEM SEPARATOR
+        MENUITEM "StretchDIBits",               IDM_VIEW_STRETCHDIBITS
+        MENUITEM "StretchDIBits\tHALFTONE",     IDM_VIEW_STRETCHHALFTONE
+        MENUITEM "StretchDIBits\tDIB_PAL_COLORS", IDM_VIEW_STRETCHPALCOLORS
+        MENUITEM "SetDIBitsToDevice\tReverse Color", 
+                                                IDM_VIEW_SETDIBITSTODEVICE
+        MENUITEM SEPARATOR
+        MENUITEM "Fit Window\tStretchDIBits",   IDM_VIEW_FITWINDOW
+    END
+    POPUP "Colors"
+    BEGIN
+        MENUITEM "Color Depth Reduction\tClosest Match", 
+                                                IDM_COLORS_CDR_CLOSEST
+        MENUITEM "Color Depth Reduction\tError Diffusion", 
+                                                IDM_COLORS_CDR_ERRORDIFFUSION
+
+    END
+    POPUP "&Tests"
+    BEGIN
+        MENUITEM "Palette",                     IDM_VIEW_PALETTE
+        MENUITEM "Halftone Palette",            IDM_VIEW_HALFTONEPALETTE
+        MENUITEM "Grayscale Palette",           IDM_VIEW_GRAYSCALEPALETTE
+        MENUITEM "Full Grayscale",              IDM_VIEW_GRAYSCALEFULL
+        MENUITEM "Explicit Palette",            IDM_VIEW_EXPLICITPALETTE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade\tShift+F5",          IDM_WINDOW_CASCADE
+        MENUITEM "&Tile\tShift+F4",             IDM_WINDOW_TILE
+        MENUITEM "Arrange &Icons",              IDM_WINDOW_ARRANGE
+        MENUITEM "Close &All",                  IDM_WINDOW_CLOSEALL
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TIGER2              BITMAP  DISCARDABLE     "..\\..\\Res\\tiger2.bmp"
+IDB_TIGER1              BITMAP  DISCARDABLE     "..\\..\\Res\\tiger1.bmp"
+IDR_277                 BITMAP  DISCARDABLE     "..\\..\\Res\\277.bmp"
+IDB_FLOWER              BITMAP  DISCARDABLE     "..\\..\\Res\\flower.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_277 TOOLBAR DISCARDABLE  24, 24
+BEGIN
+    BUTTON      ID_BUTTON40136
+    BUTTON      ID_BUTTON40137
+    BUTTON      ID_BUTTON40138
+    BUTTON      ID_BUTTON40139
+    BUTTON      ID_BUTTON40140
+    BUTTON      ID_BUTTON40141
+    BUTTON      ID_BUTTON40142
+    BUTTON      ID_BUTTON40143
+    BUTTON      ID_BUTTON40144
+    BUTTON      ID_BUTTON40145
+    BUTTON      ID_BUTTON40146
+    BUTTON      ID_BUTTON40147
+    BUTTON      ID_BUTTON40148
+    BUTTON      ID_BUTTON40149
+    BUTTON      ID_BUTTON40150
+    BUTTON      ID_BUTTON40151
+    BUTTON      ID_BUTTON40152
+    BUTTON      ID_BUTTON40153
+    BUTTON      ID_BUTTON40154
+    BUTTON      ID_BUTTON40155
+    BUTTON      ID_BUTTON40156
+    BUTTON      ID_BUTTON40157
+    BUTTON      ID_BUTTON40158
+    BUTTON      ID_BUTTON40159
+    BUTTON      ID_BUTTON40160
+    BUTTON      ID_BUTTON40161
+    BUTTON      ID_BUTTON40162
+    BUTTON      ID_BUTTON40163
+    BUTTON      ID_BUTTON40164
+    BUTTON      ID_BUTTON40165
+    BUTTON      ID_BUTTON40166
+    BUTTON      ID_BUTTON40167
+    BUTTON      ID_BUTTON40168
+    BUTTON      ID_BUTTON40169
+    BUTTON      ID_BUTTON40170
+    BUTTON      ID_BUTTON40171
+    BUTTON      ID_BUTTON40172
+    BUTTON      ID_BUTTON40173
+    BUTTON      ID_BUTTON40174
+    BUTTON      ID_BUTTON40175
+    BUTTON      ID_BUTTON40176
+    BUTTON      ID_BUTTON40177
+    BUTTON      ID_BUTTON40178
+    BUTTON      ID_BUTTON40179
+    BUTTON      ID_BUTTON40180
+    BUTTON      ID_BUTTON40181
+    BUTTON      ID_BUTTON40182
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PALETTE             ICON    DISCARDABLE     "..\\..\\res\\palette.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILENEW             "Create a new bitmap"
+    IDS_FILEOPEN            "Open a bitmap file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

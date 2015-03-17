@@ -1,0 +1,115 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+    POPUP "&Test"
+    BEGIN
+        MENUITEM "Draw Mode",                   IDM_TEST_DRAWMODE
+        MENUITEM SEPARATOR
+        MENUITEM "DC_PEN",                      IDM_TEST_DCPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Simple Pen: Pen Style",       IDM_TEST_PENSTYLE
+        MENUITEM "Simple Line: Width and End Cap", IDM_TEST_WIDTHCAP
+        MENUITEM SEPARATOR
+        MENUITEM "Cosmetic Pens",               IDM_TEST_COSMETIC
+        MENUITEM "Geometric Pens\tWidth",       IDM_TEST_GEOMETRIC_WIDTH
+        MENUITEM "Geometric Pens\tEnd Cap, Style, and Pattern", 
+                                                IDM_TEST_GEOMETRIC_STYLE
+        MENUITEM SEPARATOR
+        MENUITEM "LineTo",                      IDM_TEST_LINE1
+        MENUITEM "PolyLine, LineDDA",           IDM_TEST_LINE2
+        MENUITEM SEPARATOR
+        MENUITEM "Bezier Curve Definition",     IDM_TEST_BEZIER
+        MENUITEM "Bezier Demo",                 IDM_TEST_BEZIERDEMO
+        MENUITEM "PolyDraw",                    IDM_TEST_BEZIERPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Arc, ArcTo, AngleArc",        IDM_TEST_ARC
+        MENUITEM "Convert Arcs to Bezier Curves", IDM_TEST_ARCBEZIER
+        MENUITEM "AngleArc using Bezier Curves", IDM_TEST_ANGLEARCBEZIER
+        MENUITEM SEPARATOR
+        MENUITEM "Path",                        IDM_TEST_PATH
+        MENUITEM "Style Curve",                 IDM_TEST_PATHSTYLECURVE
+        MENUITEM "Map Path",                    IDM_TEST_MAPPATH
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LINE                ICON    DISCARDABLE     "..\\..\\Res\\line.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

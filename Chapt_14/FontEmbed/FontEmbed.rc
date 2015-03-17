@@ -1,0 +1,122 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FONT DIALOG DISCARDABLE  0, 0, 222, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Font Embedding"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,85,50,14
+    PUSHBUTTON      "Load",IDC_LOAD,46,7,36,14
+    PUSHBUTTON      "Unload",IDC_UNLOAD,85,7,36,14
+    LTEXT           "Static",IDC_SAMPLE1,75,26,140,15
+    LTEXT           "Static",IDC_SAMPLE2,75,44,140,15
+    LTEXT           "Static",IDC_SAMPLE3,75,65,140,17
+    LTEXT           "",IDC_MESSAGE,127,7,88,15
+    CONTROL         "Hidden",IDC_HIDDEN,"Button",BS_AUTORADIOBUTTON,7,40,39,
+                    10
+    CONTROL         "Private",IDC_PRIVATE,"Button",BS_AUTORADIOBUTTON,7,50,
+                    38,10
+    CONTROL         "No Enumerate",IDC_NOENUM,"Button",BS_AUTORADIOBUTTON,7,
+                    60,61,10
+    CONTROL         "Memory",IDC_MEM,"Button",BS_AUTORADIOBUTTON,7,70,41,10
+    CONTROL         "Public",IDC_PUBLIC,"Button",BS_AUTORADIOBUTTON,7,30,35,
+                    10
+    PUSHBUTTON      "Generate",IDC_GENERATE,7,7,36,14
+    ICON            IDI_FONT,IDC_STATIC,197,81,20,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FONT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FONT                ICON    DISCARDABLE     "..\\..\\Res\\font.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

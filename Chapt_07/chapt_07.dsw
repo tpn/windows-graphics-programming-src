@@ -1,0 +1,104 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ClipRegion"=.\ClipRegion\ClipRegion.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name wingraph
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ColorSpace"=.\ColorSpace\ColorSpace.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name wingraph
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "GDIObj"=.\GDIObj\GDIObj.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name wingraph
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Mandelbrot"=.\Mandelbrot\Mandelbrot.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name wingraph
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "PixelSpeed"=.\PixelSpeed\PixelSpeed.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name wingraph
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "wingraph"=..\include\wingraph\wingraph.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

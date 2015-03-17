@@ -1,0 +1,169 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Bitmap",                 IDM_FILE_NEW
+        MENUITEM "&Open Bitmap",                IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Test",                        IDM_FILE_TEST
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+END
+
+IDR_DIBVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New DIB",                    IDM_FILE_NEW
+        MENUITEM "&Open",                       IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Mask Red\tSRCAND",            IDM_VIEW_MASKRED
+        MENUITEM "Mask Green\tSRCAND",          IDM_VIEW_MASKGREEN
+        MENUITEM "Mask Blue\tSRCAND",           IDM_VIEW_MASKBLUE
+        MENUITEM "StretchDIBits",               IDM_VIEW_STRETCHDIBITS
+        MENUITEM "StretchDIBits\tEllipse Mask", IDM_VIEW_OVALMASK
+        MENUITEM "StretchBlt\tEllipse Mask Source Modified", 
+                                                IDM_VIEW_STRETCHBLTOVAL
+        MENUITEM "StretchDIBits\tHorizontal and Vertical Flip", 
+                                                IDM_VIEW_STRETCHDIBITS4
+        MENUITEM "StretchDIBits\tEllipse Clip", IDM_VIEW_STRETCHDIBCLIP
+        MENUITEM "SetDIBitsToDevice\tReverse Color", 
+                                                IDM_VIEW_SETDIBITSTODEVICE
+        MENUITEM "Fit Window\tStretchDIBits",   IDM_VIEW_FITWINDOW
+        MENUITEM "Fade In\t0xCA07A9",           IDM_VIEW_FADEIN
+        MENUITEM "Fade In\tAlphaBlend",         IDM_VIEW_ALPHAFADE
+        MENUITEM "Cube\tGDI PlgBit",            IDM_VIEW_CUBE
+        MENUITEM "Cube\tSimulated PltBlt",      IDM_VIEW_SIMUPLGBLT
+        MENUITEM "Cube\tDirect Pixel Access",   IDM_VIEW_CUBEPIXEL
+        MENUITEM SEPARATOR
+        MENUITEM "DIB Hex Dump",                IDM_VIEW_DIBHEXDUMP
+    END
+    POPUP "&Tests"
+    BEGIN
+        MENUITEM "Rop3 Chart",                  IDM_VIEW_ROPCHART
+        MENUITEM "Icons",                       IDM_VIEW_ICON
+        MENUITEM "Coloring Bitmap",             IDM_VIEW_COLORBITMAP
+        MENUITEM "LoadImage",                   IDM_VIEW_LOADIMAGE
+        MENUITEM "Alpha Blending",              IDM_VIEW_ALPHABLEND
+        MENUITEM "Palette",                     IDM_VIEW_PALETTE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade\tShift+F5",          IDM_WINDOW_CASCADE
+        MENUITEM "&Tile\tShift+F4",             IDM_WINDOW_TILE
+        MENUITEM "Arrange &Icons",              IDM_WINDOW_ARRANGE
+        MENUITEM "Close &All",                  IDM_WINDOW_CLOSEALL
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CONFUSE             BITMAP  DISCARDABLE     "..\\..\\Res\\confuse.bmp"
+IDB_WOOD01              BITMAP  DISCARDABLE     "..\\..\\Res\\wood01.bmp"
+IDB_PATTERN01           BITMAP  DISCARDABLE     "..\\..\\res\\pattern01.bmp"
+IDB_MOSQUIT3            BITMAP  DISCARDABLE     "..\\..\\Res\\mosquit3.bmp"
+IDB_MOSQUIT2            BITMAP  DISCARDABLE     "..\\..\\Res\\mosquit2.bmp"
+IDB_MOSQUIT1            BITMAP  DISCARDABLE     "..\\..\\Res\\mosquit1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_IMAGE               ICON    DISCARDABLE     "..\\..\\Res\\image.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILENEW             "Create a new bitmap"
+    IDS_FILEOPEN            "Open a bitmap file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,212 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TOOLBAR DIALOG DISCARDABLE  0, 0, 395, 64
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_TITLE,3,2,115,8
+    LTEXT           "",IDC_ACTION,126,2,50,8
+    ICON            IDI_COLIVE,IDC_STATIC,364,5,18,20
+    LISTBOX         IDC_EMFLIST,3,12,186,51,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&Background",IDC_BACKGROUND,303,2,53,36
+    CONTROL         "1:1 (300 dpi)",IDC_SCL_11,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,237,11,56,8
+    CONTROL         "1:2 (150 dpi)",IDC_SCL_12,"Button",BS_AUTORADIOBUTTON,
+                    237,19,55,8
+    CONTROL         "1:3 (100 dpi) ",IDC_SCL_13,"Button",BS_AUTORADIOBUTTON,
+                    237,27,57,8
+    CONTROL         "1:4 (75 dpi)",IDC_SCL_14,"Button",BS_AUTORADIOBUTTON,
+                    237,35,56,8
+    CONTROL         "1:5 (60 dpi)",IDC_SCL_15,"Button",BS_AUTORADIOBUTTON,
+                    237,43,56,8
+    CONTROL         "1:6 (50 dpi)",IDC_SCL_16,"Button",BS_AUTORADIOBUTTON,
+                    237,51,57,8
+    GROUPBOX        "&Scale",IDC_SCALE,232,2,65,61
+    CONTROL         "&White",IDC_WHITE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,306,11,44,8
+    CONTROL         "&Gray",IDC_GRAY,"Button",BS_AUTORADIOBUTTON,306,19,42,8
+    CONTROL         "&Yellow",IDC_YELLOW,"Button",BS_AUTORADIOBUTTON,306,27,
+                    42,8
+    PUSHBUTTON      "&Open",IDC_OPEN,303,40,25,22,BS_ICON
+    PUSHBUTTON      "&Print",IDC_PRINT,331,40,25,22,BS_ICON
+    PUSHBUTTON      "&Setup",IDC_SETUP,196,40,25,22,BS_ICON
+    PUSHBUTTON      "&Smoke",IDC_SMOKE,196,14,25,22,BS_ICON
+    LTEXT           "",IDC_TIME,184,2,33,8
+END
+
+IDD_SETUP DIALOGEX 0, 0, 168, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "EmfScope Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,118,84,43,14
+    CONTROL         "&Save EMF File",IDC_SAVEEMF,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,74,67,10
+    CONTROL         "&Show",IDC_MIDVIEW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,88,73,10
+    EDITTEXT        IDC_DESTDIR,28,53,110,14,ES_AUTOHSCROLL
+    LTEXT           "Display Speed",IDC_STATIC,7,7,46,8
+    LTEXT           "Output Directory",IDC_STATIC,7,41,49,8
+    LTEXT           "Fast",IDC_STATIC,29,31,14,8
+    LTEXT           "Slow",IDC_STATIC,119,31,16,8,0,WS_EX_RIGHT
+    CONTROL         "Slider1",IDC_SPEED,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_TABSTOP,27,14,114,15
+END
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 187, 48
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Delayed Painting"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,130,27,50,14
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    7,173,14
+    LTEXT           "Static",IDC_NUMBER,7,33,43,8
+END
+
+IDD_RENAME DIALOG DISCARDABLE  0, 0, 201, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename File"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,42,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,106,45,50,14
+    EDITTEXT        IDC_OLDNAME,48,7,146,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Rename :",IDC_STATIC,7,11,34,8
+    CTEXT           "As :",IDC_STATIC,30,24,12,8
+    EDITTEXT        IDC_NEWNAME,48,23,146,14,ES_AUTOHSCROLL
+END
+
+IDD_PROPERTIES DIALOG DISCARDABLE  0, 0, 187, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+    LISTBOX         IDC_LIST1,7,7,117,186,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_COLIVE              ICON    DISCARDABLE     "..\\..\\Res\\colive.ico"
+IDI_OPEN                ICON    DISCARDABLE     "..\\..\\Res\\open.ico"
+IDI_PRINT               ICON    DISCARDABLE     "..\\..\\Res\\printer.ico"
+IDI_SETUP               ICON    DISCARDABLE     "..\\..\\Res\\setup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Exit",                       ID_APP_EXIT
+    END
+    POPUP "Action"
+    BEGIN
+        MENUITEM "&Open",                       IDM_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Re&name",                     IDM_RENAME
+        MENUITEM "&Properties",                 IDM_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Remove from List",           IDM_REMOVE
+        MENUITEM "&Delete File",                IDM_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SPOOLERMISSING      "Spooler can't loaded"
+    IDS_DESPOOL             "Despooling"
+    IDS_DELETE              "Deleting"
+    IDS_COPY                "EmfScope Copying"
+    IDS_APPTITLE            "EmfScope"
+    IDS_CONFIRMDELETE       "Do you want to delete %s ?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,33 @@
+<1B>
+%-12345X@PJL JOB
+@PJL ENTER LANGUAGE = POSTSCRIPT 
+%!PS-Adobe-3.0
+%%Title: Document
+%%Creator: Pscript.dll Version 5.0
+%%Orientation: Portrait
+%%PageOrder: Special
+%%TargetDevice: (HP Color LaserJet 8500) (3010.104) 1
+%%LanguageLevel: 3
+%%EndComments
+
+..
+
+%%IncludeResource: font TimesNewRomanPSMT
+F /F0 0 /256 T /TimesNewRomanPSMT mF 
+/F0S53 F0 
+[83 0 0 -83 0 0 ] mFS
+F0S53 setfont 
+
+650 574 moveto 
+(Printer Control Language)[47 28 23 41 23 37 28 21 55 42 41 23 28 42 23 21 50 37 41 41 41 37 41  0]xshow 
+showpage
+(%%[Page: 1]%%) = 
+%%PageTrailer
+
+%%Trailer
+%%BoundingBox: 12 12 600 780
+%%Pages: 1
+(%%[LastPage]%%) = 
+%%EOF
+<1B>%-12345X@PJL EOJ
+<1B>%-12345X

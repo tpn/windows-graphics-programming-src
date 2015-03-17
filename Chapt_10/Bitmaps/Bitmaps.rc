@@ -1,0 +1,373 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Bitmap",                 IDM_FILE_NEW
+        MENUITEM "&Open Bitmap",                IDM_FILE_OPEN
+        MENUITEM "Save Window to Bitmap",       IDM_FILE_SAVEDIB
+        MENUITEM SEPARATOR
+        MENUITEM "Device Dependent Bitmaps",    IDM_FILE_NEWDDB
+        MENUITEM SEPARATOR
+        MENUITEM "DIB Secton",                  IDM_FILE_NEW_DIBSECTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+END
+
+IDR_DIBVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New DIB",                    IDM_FILE_NEW
+        MENUITEM "&Open",                       IDM_FILE_OPEN
+        POPUP "Save Window To DIB"
+        BEGIN
+            MENUITEM "1 bpp",                       IDM_FILE_SAVEDIB1BPP
+            MENUITEM "4 bpp",                       IDM_FILE_SAVEDIB4BPP
+            MENUITEM "4 bpp\tRLE",                  IDM_FILE_SAVEDIB4RLE
+            MENUITEM "8 bpp",                       IDM_FILE_SAVEDIB8BPP
+            MENUITEM "8 bpp\tRLE",                  IDM_FILE_SAVEDIB8RLE
+            MENUITEM "16 bpp",                      IDM_FILE_SAVEDIB16BPP
+            MENUITEM "16 bpp\tBITFIELDS",           IDM_FILE_SAVEDIB16BITFIELDS
+
+            MENUITEM "24 bpp",                      IDM_FILE_SAVEDIB24BPP
+            MENUITEM "32 bpp",                      IDM_FILE_SAVEDIB32BPP
+            MENUITEM "32 bpp\tBITFIELDS",           IDM_FILE_SAVEDIB32BITFIELDS
+
+            MENUITEM "Save to 24 bpp using DIB Section", 
+                                                    IDM_FILE_SAVEDIBSECTION
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "New DDB",                     IDM_FILE_NEWDDB
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+    POPUP "Color"
+    BEGIN
+        MENUITEM "Grey Scale",                  IDM_COLOR_GREYSCALE
+        MENUITEM "Lighten Up",                  IDM_COLOR_LIGHTEN
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "StretchDIBits",               IDM_VIEW_STRETCHDIBITS
+        MENUITEM "StretchDIBits\tHorizontal and Vertical Flip", 
+                                                IDM_VIEW_STRETCHDIBITS4
+        MENUITEM "SetDIBitsToDevice\tReverse Color", 
+                                                IDM_VIEW_SETDIBITSTODEVICE
+        MENUITEM "Fit Window",                  IDM_VIEW_FITWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "DIB Hex Dump",                IDM_VIEW_DIBHEXDUMP
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade\tShift+F5",          IDM_WINDOW_CASCADE
+        MENUITEM "&Tile\tShift+F4",             IDM_WINDOW_TILE
+        MENUITEM "Arrange &Icons",              IDM_WINDOW_ARRANGE
+        MENUITEM "Close &All",                  IDM_WINDOW_CLOSEALL
+    END
+END
+
+IDR_DDBVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New DIB",                    IDM_FILE_NEW
+        MENUITEM "&Open",                       IDM_FILE_OPEN
+        POPUP "Save Window To DIB"
+        BEGIN
+            MENUITEM "1 bpp",                       IDM_FILE_SAVEDIB1BPP
+            MENUITEM "4 bpp",                       IDM_FILE_SAVEDIB4BPP
+            MENUITEM "4 bpp\tRLE",                  IDM_FILE_SAVEDIB4RLE
+            MENUITEM "8 bpp",                       IDM_FILE_SAVEDIB8BPP
+            MENUITEM "8 bpp\tRLE",                  IDM_FILE_SAVEDIB8RLE
+            MENUITEM "16 bpp",                      IDM_FILE_SAVEDIB16BPP
+            MENUITEM "16 bpp\tBITFIELDS",           IDM_FILE_SAVEDIB16BITFIELDS
+
+            MENUITEM "24 bpp",                      IDM_FILE_SAVEDIB24BPP
+            MENUITEM "32 bpp",                      IDM_FILE_SAVEDIB32BPP
+            MENUITEM "32 bpp\tBITFIELDS",           IDM_FILE_SAVEDIB32BITFIELDS
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "New DDB",                     IDM_FILE_NEWDDB
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "CreateBitmap",                IDM_VIEW_CREATEBITMAP
+        MENUITEM "Largest DDB",                 IDM_VIEW_LARGESTDDB
+        MENUITEM "LoadBitmap",                  IDM_VIEW_LOADBITMAP
+        MENUITEM "LoadBitmap\tHex Dump",        IDM_VIEW_LOADBITMAPHEX
+        MENUITEM "CreateDIBitmap",              IDM_VIEW_CREATEDIBITMAP
+        MENUITEM "CreateDIBitmap\tHex Dump",    IDM_VIEW_CREATEDIBITMAPHEX
+        POPUP "BitBlt/StretchBlt"
+        BEGIN
+            MENUITEM "Normal",                      IDM_VIEW_BLT_NORMAL
+            MENUITEM "Center",                      IDM_VIEW_BLT_CENTER
+            MENUITEM "Stretch",                     IDM_VIEW_BLT_STRETCH
+            MENUITEM "Stretch Proportional",        IDM_VIEW_BLT_STRETCHPROP
+            MENUITEM "Tile",                        IDM_VIEW_BLT_TILE
+        END
+        MENUITEM "BitBlt\tColoring",            IDM_VIEW_BITBLT_COLOR
+        MENUITEM "BitBlt\tGenerate Mask",       IDM_VIEW_GENMASK
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade\tShift+F5",          IDM_WINDOW_CASCADE
+        MENUITEM "&Tile\tShift+F4",             IDM_WINDOW_TILE
+        MENUITEM "Arrange &Icons",              IDM_WINDOW_ARRANGE
+        MENUITEM "Close &All",                  IDM_WINDOW_CLOSEALL
+    END
+    POPUP "&Check Marks"
+    BEGIN
+        MENUITEM "Back",                        ID_ICONS_BACK
+        MENUITEM "Forward",                     ID_ICONS_FORWARD
+        MENUITEM "Favorities",                  ID_ICONS_FAVORITIES
+        MENUITEM "Add to Favorites",            ID_ICONS_ADDTOFAVORITES
+        MENUITEM "View Tree",                   ID_ICONS_VIEWTREE
+        MENUITEM "Cut",                         ID_ICONS_CUT
+        MENUITEM "Copy",                        ID_ICONS_COPY
+        MENUITEM "Paste",                       ID_ICONS_PASTE
+        MENUITEM "Undo",                        ID_ICONS_UNDO
+        MENUITEM "Redo",                        ID_ICONS_REDO
+        MENUITEM "Delete",                      ID_ICONS_DELETE
+        MENUITEM "New",                         ID_ICONS_NEW
+        MENUITEM "Open",                        ID_ICONS_OPEN
+        MENUITEM "Save",                        ID_ICONS_SAVE
+        MENUITEM "Printe Preview",              ID_ICONS_PRINTEPRE
+        MENUITEM "Properties",                  ID_ICONS_PROPERTIES
+        MENUITEM "Help",                        ID_ICONS_HELP
+        MENUITEM "Find",                        ID_ICONS_FIND
+        MENUITEM "Replace",                     ID_ICONS_REPLACE
+        MENUITEM "Print",                       ID_ICONS_PRINT
+    END
+    POPUP "&Textures"
+    BEGIN
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_DIBSECTIONVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New DIB",                    IDM_FILE_NEW
+        MENUITEM "&Open",                       IDM_FILE_OPEN
+        POPUP "Save Window To DIB"
+        BEGIN
+            MENUITEM "1 bpp",                       IDM_FILE_SAVEDIB1BPP
+            MENUITEM "4 bpp",                       IDM_FILE_SAVEDIB4BPP
+            MENUITEM "4 bpp\tRLE",                  IDM_FILE_SAVEDIB4RLE
+            MENUITEM "8 bpp",                       IDM_FILE_SAVEDIB8BPP
+            MENUITEM "8 bpp\tRLE",                  IDM_FILE_SAVEDIB8RLE
+            MENUITEM "16 bpp",                      IDM_FILE_SAVEDIB16BPP
+            MENUITEM "16 bpp\tBITFIELDS",           IDM_FILE_SAVEDIB16BITFIELDS
+
+            MENUITEM "24 bpp",                      IDM_FILE_SAVEDIB24BPP
+            MENUITEM "32 bpp",                      IDM_FILE_SAVEDIB32BPP
+            MENUITEM "32 bpp\tBITFIELDS",           IDM_FILE_SAVEDIB32BITFIELDS
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "New DDB",                     IDM_FILE_NEWDDB
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      IDM_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+    POPUP "Color"
+    BEGIN
+        MENUITEM "Grey Scale",                  IDM_COLOR_GREYSCALE
+        MENUITEM "Lighten Up",                  IDM_COLOR_LIGHTEN
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "CreateDIBSection",            IDM_VIEW_CREATEDIBSECTION
+        MENUITEM "Raster Image Processor",      IDM_VIEW_RIP
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade\tShift+F5",          IDM_WINDOW_CASCADE
+        MENUITEM "&Tile\tShift+F4",             IDM_WINDOW_TILE
+        MENUITEM "Arrange &Icons",              IDM_WINDOW_ARRANGE
+        MENUITEM "Close &All",                  IDM_WINDOW_CLOSEALL
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "..\\..\\res\\rgb1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "..\\..\\res\\rgb4.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "..\\..\\res\\rgbrle4.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "..\\..\\res\\rgb8.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "..\\..\\res\\rgbrle8.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "..\\..\\res\\rgb24.bmp"
+IDB_PUZZLE              BITMAP  DISCARDABLE     "..\\..\\res\\puzzle.bmp"
+IDB_BRICK               BITMAP  DISCARDABLE     "..\\..\\res\\brick.bmp"
+IDB_LION                BITMAP  DISCARDABLE     "..\\..\\res\\lion.bmp"
+IDB_CUBE                BITMAP  DISCARDABLE     "..\\..\\res\\cube.bmp"
+IDB_LICON               BITMAP  DISCARDABLE     "..\\..\\Res\\licon.bmp"
+IDB_SICON               BITMAP  DISCARDABLE     "..\\..\\Res\\sicon.bmp"
+IDB_MICON               BITMAP  DISCARDABLE     "..\\..\\Res\\micon.bmp"
+IDB_BRICK02             BITMAP  DISCARDABLE     "..\\..\\Res\\brick02.bmp"
+IDB_BRICK01             BITMAP  DISCARDABLE     "..\\..\\Res\\brick01.bmp"
+IDB_PAPER01             BITMAP  DISCARDABLE     "..\\..\\Res\\paper01.bmp"
+IDB_ROCK01              BITMAP  DISCARDABLE     "..\\..\\Res\\rock01.bmp"
+IDB_WOOD01              BITMAP  DISCARDABLE     "..\\..\\Res\\wood01.bmp"
+IDB_WOOD02              BITMAP  DISCARDABLE     "..\\..\\Res\\wood02.bmp"
+IDB_MARBLE01            BITMAP  DISCARDABLE     "..\\..\\Res\\marble01.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BACKGROUND DIALOG DISCARDABLE  0, 0, 248, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bitmap Background"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,180,120,61,14
+    GROUPBOX        "Group Box",IDC_GROUPBOX,7,102,165,32
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME,7,7,234,92
+END
+
+IDD_RIP DIALOG DISCARDABLE  0, 0, 260, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Software RIP"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,203,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,203,24,50,14
+    LISTBOX         IDC_LIST,7,7,187,81,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_BACKGROUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_RIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_IMAGE               ICON    DISCARDABLE     "..\\..\\Res\\image.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILENEW             "Create a new bitmap"
+    IDS_FILEOPEN            "Open a bitmap file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

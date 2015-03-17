@@ -1,0 +1,102 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_FILE_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "SetMapMode\tMM_TEXT",         IDM_VIEW_MMTEXT
+        MENUITEM "SetMapMode\tMM_LOENGLISH",    IDM_VIEW_MMLOENGLISH
+        MENUITEM "SetMapMode\tMM_HIENGLISH",    IDM_VIEW_MMHIENGLISH
+        MENUITEM "SetMapMode\tMM_LOMETRIC",     IDM_VIEW_MMLOMETRIC
+        MENUITEM "SetMapMode\tMM_HIMETRIC",     IDM_VIEW_MMHIMETRIC
+        MENUITEM "SetMapMode\tMM_TWIPS",        IDM_VIEW_MMTWIPS
+        MENUITEM "SetMapMode\tMM_ISOTROPIC",    IDM_VIEW_MMISOTROPIC
+        MENUITEM "SetMapMode\tMM_ANISOTRIPIC",  IDM_VIEW_MMANISOTROPIC
+        MENUITEM SEPARATOR
+        MENUITEM "World Transformation\t&Dotted Line", IDM_VIEW_DOTLINE
+        MENUITEM "World Transformation\t&Cube 30 degree", IDM_VIEW_CUBE30
+        MENUITEM "World Transformation\tCube 45 degree", IDM_VIEW_CUBE45
+        MENUITEM "&Region",                     IDM_VIEW_REGION
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_GRAPH               ICON    DISCARDABLE     "..\\..\\Res\\graph.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

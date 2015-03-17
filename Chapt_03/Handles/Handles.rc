@@ -1,0 +1,232 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DECODEHANDLE DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Decode GDI Handle"
+FONT 8, "Courier New", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMMAND,43,1,230,100,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_NUMBER,43,15,117,105,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_RESULT,1,29,272,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Create",IDC_CREATE,233,15,37,11,BS_CENTER | BS_VCENTER | 
+                    BS_MULTILINE
+    RTEXT           "Creator:",IDC_STATIC,4,3,36,8
+    RTEXT           "Copies:",IDC_STATIC,4,15,36,8
+    LTEXT           "",IDC_SHAREHANDLE,1,135,272,50,WS_BORDER,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_LOCATETABLE DIALOG DISCARDABLE  0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Locate GDI Handle Table"
+FONT 8, "Courier New"
+BEGIN
+    CONTROL         "List1",IDC_REGIONS,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,1,2,272,164
+    PUSHBUTTON      "&Query Virtual Memory",IDC_QUERY,173,169,99,13
+    PUSHBUTTON      "GdiQueryTable",IDC_GDIQUERY,2,170,72,13
+END
+
+IDD_MEMORY DIALOG DISCARDABLE  0, 0, 327, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Memory Dump"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "<<",IDC_UP,3,127,19,14
+    PUSHBUTTON      ">>",IDC_DOWN,26,127,19,14
+    EDITTEXT        IDC_DUMP,3,32,321,92,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "Start Address :",IDC_STATIC,3,4,48,8
+    RTEXT           "Size :",IDC_STATIC,3,16,48,8
+    EDITTEXT        IDC_REGIONSTART,55,2,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REGIONSIZE,55,16,47,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&OK",IDOK,274,127,50,14
+    CONTROL         "Byte",IDC_BYTE,"Button",BS_AUTORADIOBUTTON,150,11,28,10
+    CONTROL         "Word",IDC_WORD,"Button",BS_AUTORADIOBUTTON,185,11,30,10
+    CONTROL         "DWord",IDC_DWORD,"Button",BS_AUTORADIOBUTTON,226,11,38,
+                    10
+    PUSHBUTTON      "Dump",IDC_MEMORYDUMP,51,127,37,14
+    PUSHBUTTON      "Search",IDC_SEARCH,97,127,37,14
+    EDITTEXT        IDC_TARGET,138,127,47,14,ES_AUTOHSCROLL
+END
+
+IDD_DECODETABLE DIALOG DISCARDABLE  0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Decode GDI Handle Table"
+FONT 8, "Courier New"
+BEGIN
+    CONTROL         "List1",IDC_GDITABLE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,1,17,272,123
+    PUSHBUTTON      "&Go",IDC_GO,70,2,31,12
+    EDITTEXT        IDC_DETAIL,1,141,272,44,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL
+    CONTROL         "Process Only",IDC_PROCESSONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,2,3,66,12
+    COMBOBOX        IDC_EXPERIMENT,110,2,163,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EDITDC DIALOG DISCARDABLE  0, 0, 290, 152
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Context"
+FONT 8, "Courier New"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,245,125,42,14
+    LISTBOX         IDC_OPERATIONS,2,2,138,112,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CONTEXT,149,2,138,113,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Old",IDC_STATIC,9,124,25,8
+    EDITTEXT        IDC_OLD,34,121,40,14,ES_AUTOHSCROLL
+    LTEXT           "New",IDC_STATIC,89,124,15,8
+    EDITTEXT        IDC_NEW,121,122,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Set",IDC_SET,177,124,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DECODEHANDLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 304
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_LOCATETABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 318
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_MEMORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 324
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_DECODETABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 285
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_EDITDC, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 287
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 150
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DECODEHANDLE DLGINIT
+BEGIN
+    IDC_COMMAND, 0x403, 45, 0
+0x7243, 0x6165, 0x6574, 0x7242, 0x7375, 0x2068, 0x7243, 0x6165, 0x6574, 
+0x6f53, 0x696c, 0x2064, 0x7242, 0x7375, 0x2068, 0x7243, 0x6165, 0x6574, 
+0x4944, 0x4242, 0x7572, 0x6873, "\000" 
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_GDIHANDLES          ICON    DISCARDABLE     "..\\..\\res\\gdihand.ico"
+IDI_EQUAL               ICON    DISCARDABLE     "..\\..\\res\\equal.ico"
+IDI_CHANGE              ICON    DISCARDABLE     "..\\..\\res\\change.ico"
+IDI_EMPTY               ICON    DISCARDABLE     "..\\..\\res\\empty.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

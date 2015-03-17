@@ -1,0 +1,173 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DEVICEPAGE DIALOG DISCARDABLE  0, 0, 210, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Display Devices"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_DEVICE,66,7,137,90,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Device Name:",IDC_STATIC,7,9,56,8
+    LISTBOX         IDC_MODES,65,68,138,105,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Display Modes:",IDC_STATIC,7,69,56,8
+    RTEXT           "Device String:",IDC_STATIC,7,21,56,8
+    RTEXT           "State Flags:",IDC_STATIC,7,33,56,8
+    RTEXT           "DeviceID:",IDC_STATIC,7,45,56,8
+    RTEXT           "Device Key:",IDC_STATIC,7,57,56,8
+    EDITTEXT        IDC_DEVICESTRING,66,19,137,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEVICEID,65,43,138,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEVICEKEY,65,55,138,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_STATEFLAGS,66,31,137,90,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&GetDeviceCaps",IDC_DEVICECAPS,7,85,54,14
+    PUSHBUTTON      "DC Attributes",IDC_DCATTR,7,105,54,14
+END
+
+IDD_DEVICECAPS DIALOG DISCARDABLE  0, 0, 196, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DeviceCaps"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,189,50,14
+    CONTROL         "List1",IDC_CAPS,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,181,179
+END
+
+IDD_DCATTRIBUTES DIALOG DISCARDABLE  0, 0, 346, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Context Attributes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,147,179,58,14
+    CONTROL         "List1",IDC_DCATTRIBUTES,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,45,332,131
+    CONTROL         "CreateDC(""DISPLAY"", NULL, NULL, NULL)",IDC_CREATEDC,
+                    "Button",BS_AUTORADIOBUTTON | BS_NOTIFY,7,3,160,10
+    CONTROL         "GetDC(m_hWnd)",IDC_GETDC,"Button",BS_AUTORADIOBUTTON | 
+                    BS_NOTIFY,7,13,67,10
+    CONTROL         "GetDC(GetParent(m_hWnd))",IDC_GETDCPARENT,"Button",
+                    BS_AUTORADIOBUTTON | BS_NOTIFY,170,3,101,10
+    CONTROL         "GetDC(GetDlgItem(m_hWnd, IDOK))",IDC_GETDCOK,"Button",
+                    BS_AUTORADIOBUTTON | BS_NOTIFY,170,13,123,10
+    CONTROL         "CreateCompatibleDC",IDC_MEMDC,"Button",
+                    BS_AUTORADIOBUTTON | BS_NOTIFY,7,23,93,10
+    CONTROL         "CreateCompatibleDC 2",IDC_MEMDC2,"Button",
+                    BS_AUTORADIOBUTTON | BS_NOTIFY,170,23,93,10
+    CONTROL         "CreateMetaFile",IDC_WMF,"Button",BS_AUTORADIOBUTTON | 
+                    BS_NOTIFY,7,33,81,10
+    CONTROL         "CreateEnhMetaFile",IDC_EMF,"Button",BS_AUTORADIOBUTTON | 
+                    BS_NOTIFY,170,33,102,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DEVICEPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DEVICECAPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_DCATTRIBUTES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_GRAPH               ICON    DISCARDABLE     "..\\..\\Res\\graph.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
