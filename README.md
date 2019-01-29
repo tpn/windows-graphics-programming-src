@@ -5,5 +5,5 @@ http://www.amazon.com/Windows-Graphics-Programming-Hewlett-Packard-Professional/
 
 All content copyright Feng Yuan.
 
-Source code downloaded from: http://blogs.msdn.com/b/fyuan/archive/2007/03/20/source-code-for-windows-graphics-programming-win32-gdi-and-directdraw.aspx
+Source code downloaded from: http://www.fengyuan.com/sample/Samples.zip
 
